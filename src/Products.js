@@ -9,7 +9,7 @@ function Products({ addToCart }) {
   ];
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="products-container">
       <h2>Products</h2>
       {products.map((item) => (
         <ProductCard key={item.id} product={item} addToCart={addToCart} />
