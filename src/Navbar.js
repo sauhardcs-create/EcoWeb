@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar({ cartCount }) {
   return (
-    <div style={{ padding: "15px", backgroundColor: "#eee" }}>
+    <div className="navbar">
       <Link to="/" style={{ marginRight: "10px" }}>Home</Link>
       <Link to="/products" style={{ marginRight: "10px" }}>Products</Link>
       <Link to="/cart">Cart ({cartCount})</Link>

@@ -3,12 +3,6 @@ import React from "react";
 function ProductCard({ product, addToCart }) {
   const validStock = typeof product.stock === "boolean";
 
-  const cardStyle = {
-    border: "1px solid black",
-    padding: "10px",
-    marginBottom: "10px",
-    width: "250px"
-  };
 
   const stockStyle = {
     color: product.stock ? "green" : "red",
@@ -16,7 +10,7 @@ function ProductCard({ product, addToCart }) {
   };
 
   return (
-    <div style={cardStyle}>
+    <div className="card">
       <h3>{product.name}</h3>
       <p>Price: ₹{product.price}</p>
 
