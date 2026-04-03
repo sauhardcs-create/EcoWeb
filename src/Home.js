@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 
 function Home() {
   const [message, setMessage] = useState("");
@@ -11,7 +12,10 @@ function Home() {
     <div className="home">
   <h1>{message}</h1>
   <p>Find the best gadgets at unbeatable prices</p>
-  <button>Shop Now</button>
+  <Link to="./Products">
+      <button>Shop Now</button>
+  </Link>
+  
 </div>
   );
 }

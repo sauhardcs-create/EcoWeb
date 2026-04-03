@@ -9,11 +9,13 @@ function Products({ addToCart }) {
   ];
 
   return (
-    <div className="products-container">
-      <h2>Products</h2>
-      {products.map((item) => (
-        <ProductCard key={item.id} product={item} addToCart={addToCart} />
-      ))}
+    <div className="products-page">
+      <h2 className="products-title">Products</h2>
+      <div className="products-container">
+        {products.map((item) => (
+          <ProductCard key={item.id} product={item} addToCart={addToCart} />
+        ))}
+      </div>
     </div>
   );
 }
