@@ -2,19 +2,22 @@ import React from "react";
 
 function Cart({ cart }) {
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Cart</h2>
+    <div className="cart-container">
+  <h2 className="cart-title">Your Cart</h2>
 
-      {cart.length === 0 ? (
-        <p>No items in cart</p>
-      ) : (
-        cart.map((item, index) => (
-          <div key={index}>
-            <p>{item.name} - ₹{item.price}</p>
-          </div>
-        ))
-      )}
+  {cart.map((item, index) => (
+    <div className="cart-item" key={index}>
+      <span>{item.name}</span>
+      <span>₹{item.price}</span>
     </div>
+  ))}
+
+  <div className="cart-total">
+    Total: ₹{cart.reduce((sum, item) => sum + item.price, 0)}
+  </div>
+
+  <button className="checkout-btn">Checkout</button>
+</div>
   );
 }
 

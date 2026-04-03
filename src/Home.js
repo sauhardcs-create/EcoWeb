@@ -8,10 +8,11 @@ function Home() {
   }, []);
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Home</h2>
-      <p>{message}</p>
-    </div>
+    <div className="home">
+  <h1>Welcome to EcoStore</h1>
+  <p>Find the best gadgets at unbeatable prices</p>
+  <button>Shop Now</button>
+</div>
   );
 }
 

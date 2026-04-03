@@ -1,7 +1,38 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f8;
+  background-color: #e9440e;
+}
+.home {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.home p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.home button {
+  background-color: #1abc9c;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.home button:hover {
+  background-color: #16a085;
 }
 
 h2 {
