@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div className="home">
-  <h1>Welcome to EcoStore</h1>
+  <h1>{message}</h1>
   <p>Find the best gadgets at unbeatable prices</p>
   <button>Shop Now</button>
 </div>
