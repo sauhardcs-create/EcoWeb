@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import PropTypes from "prop-types";
 
 function Products({ addToCart }) {
   const products = [
@@ -19,5 +20,7 @@ function Products({ addToCart }) {
     </div>
   );
 }
-
+Products.propTypes = {
+  addToCart: PropTypes.func.isRequired
+};
 export default Products;

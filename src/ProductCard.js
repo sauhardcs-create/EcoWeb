@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function ProductCard({ product, addToCart }) {
   const validStock = typeof product.stock === "boolean";
@@ -31,5 +32,14 @@ function ProductCard({ product, addToCart }) {
     </div>
   );
 }
+ProductCard.propTypes = {
+  product: PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    stock: PropTypes.bool
+  }).isRequired,
+  addToCart: PropTypes.func.isRequired
+};
 
 export default ProductCard;
