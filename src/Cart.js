@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 
-// Wrapper for navigation
+
 function CartWrapper(props) {
   const navigate = useNavigate();
   return <Cart {...props} navigate={navigate} />;
@@ -12,7 +12,7 @@ class Cart extends Component {
   constructor(props) {
     super(props);
 
-    // meaningful initialization (so ESLint doesn't cry)
+    
     this.state = {
       lastCheckout: null
     };
